@@ -15,7 +15,7 @@ const Projects = [
     name: "DocuAI - AI Agent for Students",
     description:
       "AI Agent that can perform tasks based on user input, especially for Students.",
-    image: "../public/Projects/AiAgent.png",
+    image: "/Projects/AiAgent.png",
     tags: ["JavaScript", "Python", "Flask", "Tailwind CSS", "Supabase", "n8n"],
     Url: "Available Soon ",
     Date: "Available Soon",
@@ -28,7 +28,7 @@ const Projects = [
     name: "Personal Portfolio",
     description:
       " A Personal Portfolio Website that was intended to showcase my skills, projects, and experiences in Many Field.",
-    image: "../public/Projects/image.png",
+    image: "/Projects/image.png",
     tags: ["JavaScript", "React", "Tailwind CSS", "Vite"],
     Url: "Not Available ",
     Date: "2026",
@@ -40,7 +40,7 @@ const Projects = [
     name: "Cafe Coding",
     description:
       "A Service Website that was intended to be a platform for courses and to build a Coding community to empower each student ",
-    image: "../public/Projects/CafeCoding.jpg",
+    image: "/Projects/CafeCoding.jpg",
     tags: ["JavaScript", "Python", "Flask", "MongoDB"],
     Url: "Not Available ",
     Date: "2024",
@@ -52,7 +52,7 @@ const Projects = [
     name: " Journal Publication, UNIDA, Volume 17 Issue 1  ",
     description:
       "International Collaboration and Coordination Vietnam’s Energy Transition: The Role of International Partners Through the Just Energy Transition Partnership ",
-    image: "../public/Projects/Jurnal.jpg",
+    image: "/Projects/Jurnal.jpg",
     tags: [
       "Research",
       " Policy Analysis ",
@@ -70,7 +70,7 @@ const Projects = [
     name: "Amnesty Greeting Days - Chapter UPNVJ",
     description:
       " A Project that was intended to Greet the New Upcomers for Amnesty Chapter UPNVJ. ",
-    image: "../public/Projects/PPTAmnesty.png",
+    image: "/Projects/PPTAmnesty.png",
     tags: [
       "Management",
       "Collaboration",
@@ -89,7 +89,7 @@ const Projects = [
     name: "Research Project - IR Theory",
     description:
       "A research project that focused on Information in International Relations (IR) Theory, exploring the role of information in shaping global politics and decision-making.",
-    image: "../public/Projects/Cover.jpg",
+    image: "/Projects/cover.jpg",
     tags: ["Research", "Canva", "Gdocs", "Google Workspace"],
     Url: "Not Available ",
     Date: "2024",
@@ -102,7 +102,7 @@ const Projects = [
     name: "Webinar Kewarganegaraan & Bela Negara",
     description:
       "Sebuah acara Webinar  tentang kewarganegaraan dan bela negara dikhususkan untuk mahasiswa dan generasi-generasi yang akan datang.",
-    image: "../public/Projects/Webinar.png",
+    image: "/Projects/Webinar.png",
     tags: ["Management", "Design", "Canva", "Gdocs", "Google Workspace"],
     Url: "Not Available ",
     Date: "2024",
