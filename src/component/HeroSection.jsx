@@ -5,17 +5,17 @@ export const Hero = () => {
       className="min-h-screen flex items-center justify-center"
     >
       <div className="flex flex-col items-center text-center">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 flex-wrap ">
           <h1 className="text-5xl md:text-7xl font-bold  opacity-0 animate-fade-in-delay-3">
             Hi, I'm
           </h1>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-primary opacity-0 animate-fade-in-delay-3">
+          <h1 className="flex flex-wrap text-5xl md:text-7xl font-bold text-primary opacity-0 animate-fade-in-delay-3">
             Dafa
           </h1>
 
-          <h1 className="text-5xl md:text-7xl font-bold  opacity-0 animate-fade-in-delay-3">
-            S
+          <h1 className="flex flex-wrap text-5xl md:text-7xl font-bold  opacity-0 animate-fade-in-delay-3">
+            Syachrullah
           </h1>
         </div>
 
@@ -33,7 +33,7 @@ export const Hero = () => {
           <a href="#projects" className="inline-block">
             <button  
             className="cosmic-button mt-6 pt-4 opacity-0 animate-fade-in-delay-4 hover:animate-pulse">
-              View My Work
+              Set to Desktop for Best Experience
             </button>
           </a>
         </div>

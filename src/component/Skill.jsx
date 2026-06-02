@@ -4,17 +4,42 @@ const SKILLS = [
     { name: "HTML", level: "Intermediate", category: "Web Development" },
     { name: "CSS", level: "Intermediate", category: "Web Development" },
     { name: "JavaScript", level: "Intermediate", category: "Web Development" },
+    { name: "TypeScript", level: "Beginner", category: "Web Development" },
+    { name: "Tailwind CSS", level: "Beginner", category: "Web Development" },
+    { name: "Bootstrap", level: "Intermediate", category: "Web Development" },
+    { name: "jQuery", level: "Beginner", category: "Web Development" },
     { name: "React", level: "Beginner", category: "Web Development" },
-    { name: "Node.js", level: "Intermediate", category: "Backend Development" },
-    { name: "Python", level: "Intermediate", category: "Backend Development" },
+    { name: "Node.js", level: "Intermediate", category: "Web Development" },
+    { name: "Python", level: "Intermediate", category: "Web Development" },
+    { name: "Git", level: "Intermediate", category: "Version Control" },
+    { name: "PHP", level: "Beginner", category: "Web Development" },
+    { name: "MongoDB", level: "Beginner", category: "Web Development" },
+    { name: "SQL", level: "Beginner", category: "Web Development" },
     { name: "Research", level: "Intermediate to Advanced", category: "Research" },
     { name: "Microsoft Office", level: "Intermediate", category: "Productivity" },
     { name: "Google Workspace", level: "Intermediate", category: "Productivity" },
-    { name: "AI Agent", level: "Intermediate", category: "AI" },
-    { name: "Git", level: "Intermediate", category: "Version Control" },
-    { name: "PHP", level: "Beginner", category: "Backend Development" },
+    { name: "AI Tools", level: "Intermediate", category: "Productivity" },
+    { name: "Critical Thinking", level: "Beginner", category: "Problem Solving" },
+    { name: "Communication", level: "Intermediate", category: "Soft Skills" },
+    { name: "Time Management", level: "Intermediate", category: "Soft Skills" },
+    { name: "Teamwork", level: "Intermediate", category: "Soft Skills" },
+
 
 ];
+
+const FILTERS = [
+    { label: "Web Development", value: "web development" },
+    { label: "Productivity", value: "productivity" },
+    { label: "Others", value: "others" },
+];
+
+const getFilterLabel = (category) => {
+    const key = String(category).toLowerCase();
+
+    if (key.includes("web development")) return "web development";
+    if (key.includes("productivity")) return "productivity";
+    return "others";
+};
 
 const levelToPercent = (level) => {
     const key = String(level).toLowerCase();
@@ -29,6 +54,11 @@ const levelToPercent = (level) => {
 
 export const Skills = () => {
     const [selectedSkill, setSelectedSkill] = useState(null);
+    const [activeFilter, setActiveFilter] = useState("web development");
+
+    const filteredSkills = activeFilter
+        ? SKILLS.filter((skill) => getFilterLabel(skill.category) === activeFilter)
+        : SKILLS;
 
     useEffect(() => {
         if (!selectedSkill) return undefined;
@@ -57,8 +87,33 @@ export const Skills = () => {
                     </span>
                 </h2>
 
+                <div className="mb-8 flex flex-wrap justify-center gap-3">
+                    {FILTERS.map((filter) => {
+                        const isActive = activeFilter === filter.value;
+                        const count = SKILLS.filter((skill) => getFilterLabel(skill.category) === filter.value).length;
+
+                        return (
+                            <button
+                                key={filter.value}
+                                type="button"
+                                onClick={() => setActiveFilter((currentFilter) => (currentFilter === filter.value ? null : filter.value))}
+                                className={`rounded-full border px-4 py-2 text-sm font-medium transition-all duration-300 ${
+                                    isActive
+                                        ? "border-primary bg-primary text-primary-foreground shadow-[0_10px_30px_rgba(139,92,246,0.25)]"
+                                        : "border-white/10 bg-card/70 text-muted-foreground hover:border-primary/40 hover:text-foreground"
+                                }`}
+                            >
+                                {filter.label}
+                                <span className={`ml-2 rounded-full px-2 py-0.5 text-xs ${isActive ? "bg-white/15" : "bg-primary/10 text-primary"}`}>
+                                    {count}
+                                </span>
+                            </button>
+                        );
+                    })}
+                </div>
+
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    {SKILLS.map((skill, index) => {
+                    {filteredSkills.map((skill, index) => {
                         const percent = levelToPercent(skill.level);
 
                         return (
@@ -96,6 +151,12 @@ export const Skills = () => {
                         );
                     })}
                 </div>
+
+                {filteredSkills.length === 0 ? (
+                    <div className="mt-10 rounded-2xl border border-white/10 bg-card/60 p-6 text-center text-muted-foreground">
+                        No skills available for this category.
+                    </div>
+                ) : null}
             </div>
 
             <div

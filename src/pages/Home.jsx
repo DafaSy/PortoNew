@@ -4,6 +4,10 @@ import { Navbar } from "../component/Navbar.jsx";
 import { Hero } from "../component/HeroSection.jsx";
 import { About } from "../component/About.jsx";
 import { Skills } from "../component/Skill.jsx";  
+import { Project } from "../component/Project.jsx";
+import { Certification } from "../component/Certification.jsx";
+import { Contact } from "../component/Contact.jsx";
+import { Footer } from "../component/Footer.jsx";
 
 
 export const Home = () => {
@@ -19,7 +23,11 @@ export const Home = () => {
          <Hero />
           <About />
           <Skills />
+          <Project />
+          <Certification />
+          <Contact/>
          {/* footer */}
+          <Footer />
     </div>
   )
 }
