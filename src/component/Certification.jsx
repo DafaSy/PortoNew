@@ -28,7 +28,7 @@ const Certifications = [
     description:
       "Learned fundamental software engineering concepts including software development lifecycle, system design, teamwork, and modern development practices.",
     image:
-      "../public/Certifications/SECC_dafadafa2211gmail.com_CCSE 061025-01-1-00122 (1)_page-0001 (1).jpg",
+      "/Certifications/secc-certificate.jpg",
     tags: [
       "Software Engineering",
       "SDLC",
@@ -47,7 +47,7 @@ const Certifications = [
     name: "Belajar Dasar Pemrograman JavaScript - Dicoding",
     description:
       "Completed foundational JavaScript training covering programming logic, variables, functions, objects, arrays, and modern JavaScript concepts.",
-    image: "../public/Certifications/DasarDicoding.jpg",
+    image: "/Certifications/DasarDicoding.jpg",
     tags: [
       "JavaScript",
       "Fundamentals",
@@ -67,7 +67,7 @@ const Certifications = [
     description:
       "Explored practical applications of AI tools for productivity, communication, research, and professional workflows.",
     image:
-      "../public/Certifications/1778811676638-a72632db-78a4-46fe-8c7f-ce8b040ba6a4_page-0001.jpg",
+      "/Certifications/1778811676638-a72632db-78a4-46fe-8c7f-ce8b040ba6a4_page-0001.jpg",
     tags: [
       "Artificial Intelligence",
       "Prompt Engineering",
@@ -87,7 +87,7 @@ const Certifications = [
     description:
       "Developed AI agents using modern AI workflows, automation tools, prompting techniques, and agent orchestration concepts.",
     image:
-      "../public/Certifications/BuildanAIAgent_Badge20260511-32-inia9b_page-0001.jpg",
+      "/Certifications/BuildanAIAgent_Badge20260511-32-inia9b_page-0001.jpg",
     tags: [
       "AI Agents",
       "Automation",
@@ -106,7 +106,7 @@ const Certifications = [
     name: "Belajar Backend Dasar Pemrograman Web dengan JavaScript - Dicoding",
     description:
       "Learned the fundamentals of web development including HTML, CSS, responsive design, and website structure.",
-    image: "../public/Certifications/beDicoding.jpg",
+    image: "/Certifications/beDicoding.jpg",
     tags: [
       "Backend Development",
       "Node.js",
@@ -125,7 +125,7 @@ const Certifications = [
     name: "Belajar Front-End Pemula dengan JavaScript - Dicoding",
     description:
       "Learned frontend development concepts including HTML, CSS, responsive design, and JavaScript.",
-    image: "../public/Certifications/beDicoding.jpg",
+    image: "/Certifications/beDicoding.jpg",
     tags: [
       "HTML",
       "CSS",
@@ -145,7 +145,7 @@ const Certifications = [
     name: "TOEFL Prediction Certification - UPNVJ",
     description:
       "Demonstrated English proficiency in reading, listening, and grammar through TOEFL prediction assessment.",
-    image: "../public/Certifications/ELPT.jpg",
+    image: "/Certifications/ELPT.jpg",
     tags: ["English", "grammar", "Writing", "Reading", "Listening"],
     Url: "Available Soon",
     Date: "2024",
@@ -159,7 +159,7 @@ const Certifications = [
     description:
       "Learned the fundamentals of data analysis including data collection, cleaning, visualization, and interpretation.",
     image:
-      "../public/Certifications/DAMC_dafadafa2211gmail.com_DAMC-090326-01-1-00310 (1)_page-0001.jpg",
+      "/Certifications/damc-sertif.jpg",
     tags: [
       "Data Analysis",
       "Data Visualization",
@@ -174,12 +174,12 @@ const Certifications = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "Intermediate English Program - Language Center ",
     description:
       "Enhanced English language skills in grammar, writing, reading, and listening.",
     image:
-      "../public/Certifications/EngCer.jpg",
+      "/Certifications/EngCer.jpg",
     tags: [
       "English",
       "grammar",
@@ -194,11 +194,11 @@ const Certifications = [
   },
 
   {
-    id: 9,
+    id: 10,
     name: "Fullstack Web Development Beginner & Intermediate - LearningX",
     description:
       "Learned fullstack development concepts including HTML, CSS, responsive design, JavaScript, and backend technologies.",
-    image: "../public/Certifications/SerLX.jpg",
+    image: "/Certifications/SerLX.jpg",
     tags: [
       "HTML",
       "CSS",
