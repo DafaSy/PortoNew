@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { Home } from './pages/Home.jsx'
 import { Toaster } from './component/ui/toaster.jsx'
 
@@ -12,6 +13,7 @@ function App() {
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Toaster />
+      <SpeedInsights />
     </BrowserRouter>
   )
 }
